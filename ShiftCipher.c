@@ -61,9 +61,7 @@ int main()
                if(num[i]<0)
                  printf("%c",num[i]+26+97);
                else if (num[i<=0])  
-                 printf("%c",num[i]+97);
-               
-               
+                 printf("%c",num[i]+97);  
                     
            }
         printf("\n");

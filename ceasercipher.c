@@ -27,7 +27,6 @@ int main()
              num[i] =text[i] - 'a'; 
        }
        
-       
        if(check==0)
          Encryption(num,n);
        else if (check == 1)

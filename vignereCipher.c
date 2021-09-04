@@ -5,7 +5,6 @@ void main()
 {   int n,m;
     printf("Enter the length of message \n");
     scanf("%d",&n);
-
     char text[n];
     printf("Enter the message send to bob : \n");
     scanf("%s",text);
@@ -43,6 +42,7 @@ void main()
     printf("Plaintext: %s", text);
     printf("Key: %s\n", key);
     printf("The new  key : %s\n", newkey);
+    printf("----------------------\n");
     printf("The ciphertext is: %s\n", encrypted);
     printf("The plaintext is: %s\n", decrypted);
  

@@ -5,8 +5,7 @@
 
 
 void encryption(char *key, char *words, char *cipher)
-{
-    
+{ 
     int  pos;
 
     for (int i = 0; i < strlen(words); i += strlen(key))
