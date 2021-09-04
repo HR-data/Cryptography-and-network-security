@@ -1,19 +1,23 @@
-#include<stdio.h>
+ #include<stdio.h>
+#include<string.h>
 int main()
-    {
-      int num[]={1,2,3};
-      int l = sizeof(num)/sizeof(int);
-      for(int i = 0;i <l ; i++)
-       {
-           printf("%d \n",num[i]);
-           if (num[i] >= 65 &&num[i] <= 90)
-                 {
-                   printf("%c",num[i]+65);    
-                 }
-               else if (num[i] >= 97 && num[i] <= 122)
-                  {
-                      printf("%c",num[i]+97); 
-                  }
-       }
-
-    }
+{
+ char str[]="meetmeafterthepartyisover";
+ int n=strlen(str);
+ char str1[n/2+1],str2[n/2+1];
+ int j=0,k=0;
+ for(int i=0;i<n;i++)
+ {
+  if(i%2==0)
+  {
+   str1[j++]=str[i];
+  }
+  else
+  {
+   str2[k++]=str[i];
+  }
+ }
+ printf("%s%s",str1,str2);
+ return 0;
+	
+}
